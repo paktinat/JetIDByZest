@@ -1,0 +1,13 @@
+Jet Identification with Zest
+https://arxiv.org/pdf/1706.03904.pdf
+Its performance can be tested on CMS Open Data. QCD 3 jets events have
+at least 1 gloun.
+
+Casimir Meets Poisson: Improved Quark/Gluon Discrimination with Counting Observables
+https://arxiv.org/pdf/1704.06266.pdf
+A complete review of q/g discrimination
+
+
+Performance of quark/gluon discrimination using pp collision data at √s=8 TeV
+http://cds.cern.ch/record/1599732/files/JME-13-002-pas.pdf?version=1
+Zjj (Z->mu mu) as the quark enriched sample and QCD dijets as the gluon enriched sample.

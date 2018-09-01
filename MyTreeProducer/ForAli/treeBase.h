@@ -1,8 +1,8 @@
 //////////////////////////////////////////////////////////
 // This class has been automatically generated on
-// Sat Sep 16 12:05:52 2017 by ROOT version 5.32/00
+// Sun Oct  8 15:26:47 2017 by ROOT version 5.32/00
 // from TTree JetInfo/Jet Information
-// found on file: /cmsdata2/paktinat/JetIDByZest/Histo_0004_New.root
+// found on file: Histo_DYJets_0028_2.root
 //////////////////////////////////////////////////////////
 
 #ifndef treeBase_h
@@ -23,27 +23,35 @@ public :
 
    // Declaration of leaf types
    Int_t           nJets;
-   Float_t         jetPt[7];   //[nJets]
-   Float_t         jetEta[7];   //[nJets]
-   Float_t         jetPhi[7];   //[nJets]
-   Float_t         jetMass[7];   //[nJets]
-   Float_t         jetBProbability[7];   //[nJets]
-   Float_t         jetProbability[7];   //[nJets]
-   Float_t         trackCountingHighPur[7];   //[nJets]
-   Float_t         trackCountingHighEff[7];   //[nJets]
-   Float_t         negativeOnlyJetBProbability[7];   //[nJets]
-   Float_t         negativeOnlyJetProbability[7];   //[nJets]
-   Float_t         negativeTrackCountingHighEff[7];   //[nJets]
-   Float_t         negativeTrackCountingHighPur[7];   //[nJets]
-   Float_t         positiveOnlyJetBProbability[7];   //[nJets]
-   Float_t         positiveOnlyJetProbability[7];   //[nJets]
-   Float_t         simpleSecondaryVertexHighEff[7];   //[nJets]
-   Float_t         simpleSecondaryVertexHighPur[7];   //[nJets]
-   Float_t         combinedSecondaryVertex[7];   //[nJets]
-   Float_t         combinedSecondaryVertexPositive[7];   //[nJets]
-   Float_t         combinedSecondaryVertexMVA[7];   //[nJets]
-   Float_t         jetZest[7];   //[nJets]
-   Float_t         jetPPerp[7];   //[nJets]
+   Float_t         jetPt[5];   //[nJets]
+   Float_t         jetEta[5];   //[nJets]
+   Float_t         jetPhi[5];   //[nJets]
+   Float_t         jetMass[5];   //[nJets]
+   Float_t         jetBProbability[5];   //[nJets]
+   Float_t         jetProbability[5];   //[nJets]
+   Float_t         trackCountingHighPur[5];   //[nJets]
+   Float_t         trackCountingHighEff[5];   //[nJets]
+   Float_t         negativeOnlyJetBProbability[5];   //[nJets]
+   Float_t         negativeOnlyJetProbability[5];   //[nJets]
+   Float_t         negativeTrackCountingHighEff[5];   //[nJets]
+   Float_t         negativeTrackCountingHighPur[5];   //[nJets]
+   Float_t         positiveOnlyJetBProbability[5];   //[nJets]
+   Float_t         positiveOnlyJetProbability[5];   //[nJets]
+   Float_t         simpleSecondaryVertexHighEff[5];   //[nJets]
+   Float_t         simpleSecondaryVertexHighPur[5];   //[nJets]
+   Float_t         combinedSecondaryVertex[5];   //[nJets]
+   Float_t         combinedSecondaryVertexPositive[5];   //[nJets]
+   Float_t         combinedSecondaryVertexMVA[5];   //[nJets]
+   Float_t         jetZest[5];   //[nJets]
+   Float_t         jetPPerp[5];   //[nJets]
+   Int_t           nGenPars;
+   Float_t         genParPt[12];   //[nGenPars]
+   Float_t         genParEta[12];   //[nGenPars]
+   Float_t         genParPhi[12];   //[nGenPars]
+   Float_t         genParMass[12];   //[nGenPars]
+   Int_t           genParID[12];   //[nGenPars]
+   Int_t           genParMotherID[12];   //[nGenPars]
+   Float_t         genParMotherPz[12];   //[nGenPars]
 
    // List of branches
    TBranch        *b_nJets;   //!
@@ -68,6 +76,14 @@ public :
    TBranch        *b_combinedSecondaryVertexMVA;   //!
    TBranch        *b_jetZest;   //!
    TBranch        *b_jetPPerp;   //!
+   TBranch        *b_nGenPars;   //!
+   TBranch        *b_genParPt;   //!
+   TBranch        *b_genParEta;   //!
+   TBranch        *b_genParPhi;   //!
+   TBranch        *b_genParMass;   //!
+   TBranch        *b_genParID;   //!
+   TBranch        *b_genParMotherID;   //!
+   TBranch        *b_genParMotherPz;   //!
 
    treeBase(TTree *tree=0);
    virtual ~treeBase();
@@ -88,9 +104,9 @@ treeBase::treeBase(TTree *tree) : fChain(0)
 // if parameter tree is not specified (or zero), connect the file
 // used to generate this class and read the Tree.
    if (tree == 0) {
-      TFile *f = (TFile*)gROOT->GetListOfFiles()->FindObject("/cmsdata2/paktinat/JetIDByZest/Histo_0004_New.root");
+      TFile *f = (TFile*)gROOT->GetListOfFiles()->FindObject("Histo_DYJets_0028_2.root");
       if (!f || !f->IsOpen()) {
-         f = new TFile("/cmsdata2/paktinat/JetIDByZest/Histo_0004_New.root");
+         f = new TFile("Histo_DYJets_0028_2.root");
       }
       f->GetObject("JetInfo",tree);
 
@@ -161,6 +177,14 @@ void treeBase::Init(TTree *tree)
    fChain->SetBranchAddress("combinedSecondaryVertexMVA", combinedSecondaryVertexMVA, &b_combinedSecondaryVertexMVA);
    fChain->SetBranchAddress("jetZest", jetZest, &b_jetZest);
    fChain->SetBranchAddress("jetPPerp", jetPPerp, &b_jetPPerp);
+   fChain->SetBranchAddress("nGenPars", &nGenPars, &b_nGenPars);
+   fChain->SetBranchAddress("genParPt", genParPt, &b_genParPt);
+   fChain->SetBranchAddress("genParEta", genParEta, &b_genParEta);
+   fChain->SetBranchAddress("genParPhi", genParPhi, &b_genParPhi);
+   fChain->SetBranchAddress("genParMass", genParMass, &b_genParMass);
+   fChain->SetBranchAddress("genParID", genParID, &b_genParID);
+   fChain->SetBranchAddress("genParMotherID", genParMotherID, &b_genParMotherID);
+   fChain->SetBranchAddress("genParMotherPz", genParMotherPz, &b_genParMotherPz);
    Notify();
 }
 

@@ -1,0 +1,32 @@
+set NN="13"
+
+echo 'echo 'N="153"' > mytreeproducer_${NN}_cfg.py' > log${NN}
+echo 'N="153"' > mytreeproducer_${NN}_cfg.py
+more mytreeproducerTemplate_cfg.py >> mytreeproducer_${NN}_cfg.py
+cmsRun mytreeproducer_${NN}_cfg.py >> log${NN}
+rm mytreeproducer_${NN}_cfg.py 
+
+echo 'echo 'N="168"' > mytreeproducer_${NN}_cfg.py'	>> log${NN}
+echo 'N="168"' > mytreeproducer_${NN}_cfg.py
+more mytreeproducerTemplate_cfg.py >> mytreeproducer_${NN}_cfg.py
+cmsRun mytreeproducer_${NN}_cfg.py >> log${NN}
+rm mytreeproducer_${NN}_cfg.py
+
+echo 'echo 'N="183"' > mytreeproducer_${NN}_cfg.py' >> log${NN}
+echo 'N="183"' > mytreeproducer_${NN}_cfg.py
+more mytreeproducerTemplate_cfg.py >> mytreeproducer_${NN}_cfg.py
+cmsRun mytreeproducer_${NN}_cfg.py >> log${NN}
+rm mytreeproducer_${NN}_cfg.py
+
+echo 'echo 'N="198"' > mytreeproducer_${NN}_cfg.py' >> log${NN}
+echo 'N="198"' > mytreeproducer_${NN}_cfg.py
+more mytreeproducerTemplate_cfg.py >> mytreeproducer_${NN}_cfg.py
+cmsRun mytreeproducer_${NN}_cfg.py >> log${NN}
+rm mytreeproducer_${NN}_cfg.py
+
+echo 'echo 'N="213"' > mytreeproducer_${NN}_cfg.py' >> log${NN}
+echo 'N="213"' > mytreeproducer_${NN}_cfg.py
+more mytreeproducerTemplate_cfg.py >> mytreeproducer_${NN}_cfg.py
+cmsRun mytreeproducer_${NN}_cfg.py >> log${NN}
+rm mytreeproducer_${NN}_cfg.py
+

@@ -1,0 +1,55 @@
+set NN="0"
+
+echo 'echo 'N="1"' > mytreeproducer_${NN}_cfg.py' > log${NN}
+echo 'N="1"' > mytreeproducer_${NN}_cfg.py
+more mytreeproducerTemplate00_cfg.py >> mytreeproducer_${NN}_cfg.py
+#cmsRun mytreeproducer_${NN}_cfg.py >> log${NN}
+rm mytreeproducer_${NN}_cfg.py 
+
+echo 'echo 'N="2"' > mytreeproducer_${NN}_cfg.py'	>> log${NN}
+echo 'N="2"' > mytreeproducer_${NN}_cfg.py
+more mytreeproducerTemplate00_cfg.py >> mytreeproducer_${NN}_cfg.py
+#cmsRun mytreeproducer_${NN}_cfg.py >> log${NN}
+rm mytreeproducer_${NN}_cfg.py
+
+echo 'echo 'N="3"' > mytreeproducer_${NN}_cfg.py' >> log${NN}
+echo 'N="3"' > mytreeproducer_${NN}_cfg.py
+more mytreeproducerTemplate00_cfg.py >> mytreeproducer_${NN}_cfg.py
+cmsRun mytreeproducer_${NN}_cfg.py >> log${NN}
+rm mytreeproducer_${NN}_cfg.py
+
+echo 'echo 'N="4"' > mytreeproducer_${NN}_cfg.py' >> log${NN}
+echo 'N="4"' > mytreeproducer_${NN}_cfg.py
+more mytreeproducerTemplate00_cfg.py >> mytreeproducer_${NN}_cfg.py
+cmsRun mytreeproducer_${NN}_cfg.py >> log${NN}
+rm mytreeproducer_${NN}_cfg.py
+
+echo 'echo 'N="5"' > mytreeproducer_${NN}_cfg.py' >> log${NN}
+echo 'N="5"' > mytreeproducer_${NN}_cfg.py
+more mytreeproducerTemplate00_cfg.py >> mytreeproducer_${NN}_cfg.py
+cmsRun mytreeproducer_${NN}_cfg.py >> log${NN}
+rm mytreeproducer_${NN}_cfg.py
+
+echo 'echo 'N="6"' > mytreeproducer_${NN}_cfg.py' >> log${NN}
+echo 'N="6"' > mytreeproducer_${NN}_cfg.py
+more mytreeproducerTemplate00_cfg.py >> mytreeproducer_${NN}_cfg.py
+cmsRun mytreeproducer_${NN}_cfg.py >> log${NN}
+rm mytreeproducer_${NN}_cfg.py
+
+echo 'echo 'N="7"' > mytreeproducer_${NN}_cfg.py' >> log${NN}
+echo 'N="7"' > mytreeproducer_${NN}_cfg.py
+more mytreeproducerTemplate00_cfg.py >> mytreeproducer_${NN}_cfg.py
+cmsRun mytreeproducer_${NN}_cfg.py >> log${NN}
+rm mytreeproducer_${NN}_cfg.py
+
+echo 'echo 'N="8"' > mytreeproducer_${NN}_cfg.py' >> log${NN}
+echo 'N="8"' > mytreeproducer_${NN}_cfg.py
+more mytreeproducerTemplate00_cfg.py >> mytreeproducer_${NN}_cfg.py
+cmsRun mytreeproducer_${NN}_cfg.py >> log${NN}
+rm mytreeproducer_${NN}_cfg.py
+
+echo 'echo 'N="9"' > mytreeproducer_${NN}_cfg.py' >> log${NN}
+echo 'N="9"' > mytreeproducer_${NN}_cfg.py
+more mytreeproducerTemplate00_cfg.py >> mytreeproducer_${NN}_cfg.py
+cmsRun mytreeproducer_${NN}_cfg.py >> log${NN}
+rm mytreeproducer_${NN}_cfg.py
