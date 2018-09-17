@@ -1,7 +1,0 @@
-set NN="0"
-
-echo 'echo 'N="00"' > mytreeproducer_${NN}_cfg.py' > log${NN}
-echo 'N="00"' > mytreeproducer_${NN}_cfg.py
-more mytreeproducerTemplate_cfg.py >> mytreeproducer_${NN}_cfg.py
-cmsRun mytreeproducer_${NN}_cfg.py >> log${NN}
-rm mytreeproducer_${NN}_cfg.py 

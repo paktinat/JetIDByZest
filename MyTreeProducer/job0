@@ -2,54 +2,54 @@ set NN="0"
 
 echo 'echo 'N="10"' > mytreeproducer_${NN}_cfg.py' > log${NN}
 echo 'N="10"' > mytreeproducer_${NN}_cfg.py
-more mytreeproducerTemplate_cfg.py >> mytreeproducer_${NN}_cfg.py
+more mytreeCounterTemplate_cfg.py >> mytreeproducer_${NN}_cfg.py
 cmsRun mytreeproducer_${NN}_cfg.py >> log${NN}
 rm mytreeproducer_${NN}_cfg.py 
 
 echo 'echo 'N="20"' > mytreeproducer_${NN}_cfg.py'	>> log${NN}
 echo 'N="20"' > mytreeproducer_${NN}_cfg.py
-more mytreeproducerTemplate_cfg.py >> mytreeproducer_${NN}_cfg.py
+more mytreeCounterTemplate_cfg.py >> mytreeproducer_${NN}_cfg.py
 cmsRun mytreeproducer_${NN}_cfg.py >> log${NN}
 rm mytreeproducer_${NN}_cfg.py
 
 echo 'echo 'N="30"' > mytreeproducer_${NN}_cfg.py' >> log${NN}
 echo 'N="30"' > mytreeproducer_${NN}_cfg.py
-more mytreeproducerTemplate_cfg.py >> mytreeproducer_${NN}_cfg.py
-#cmsRun mytreeproducer_${NN}_cfg.py >> log${NN}
+more mytreeCounterTemplate_cfg.py >> mytreeproducer_${NN}_cfg.py
+cmsRun mytreeproducer_${NN}_cfg.py >> log${NN}
 rm mytreeproducer_${NN}_cfg.py
 
 echo 'echo 'N="40"' > mytreeproducer_${NN}_cfg.py' >> log${NN}
 echo 'N="40"' > mytreeproducer_${NN}_cfg.py
-more mytreeproducerTemplate_cfg.py >> mytreeproducer_${NN}_cfg.py
-#cmsRun mytreeproducer_${NN}_cfg.py >> log${NN}
+more mytreeCounterTemplate_cfg.py >> mytreeproducer_${NN}_cfg.py
+cmsRun mytreeproducer_${NN}_cfg.py >> log${NN}
 rm mytreeproducer_${NN}_cfg.py
 
 echo 'echo 'N="50"' > mytreeproducer_${NN}_cfg.py' >> log${NN}
 echo 'N="50"' > mytreeproducer_${NN}_cfg.py
-more mytreeproducerTemplate_cfg.py >> mytreeproducer_${NN}_cfg.py
-#cmsRun mytreeproducer_${NN}_cfg.py >> log${NN}
+more mytreeCounterTemplate_cfg.py >> mytreeproducer_${NN}_cfg.py
+cmsRun mytreeproducer_${NN}_cfg.py >> log${NN}
 rm mytreeproducer_${NN}_cfg.py
 
 echo 'echo 'N="60"' > mytreeproducer_${NN}_cfg.py' >> log${NN}
 echo 'N="60"' > mytreeproducer_${NN}_cfg.py
-more mytreeproducerTemplate_cfg.py >> mytreeproducer_${NN}_cfg.py
-#cmsRun mytreeproducer_${NN}_cfg.py >> log${NN}
+more mytreeCounterTemplate_cfg.py >> mytreeproducer_${NN}_cfg.py
+cmsRun mytreeproducer_${NN}_cfg.py >> log${NN}
 rm mytreeproducer_${NN}_cfg.py
 
 echo 'echo 'N="70"' > mytreeproducer_${NN}_cfg.py' >> log${NN}
 echo 'N="70"' > mytreeproducer_${NN}_cfg.py
-more mytreeproducerTemplate_cfg.py >> mytreeproducer_${NN}_cfg.py
-#cmsRun mytreeproducer_${NN}_cfg.py >> log${NN}
+more mytreeCounterTemplate_cfg.py >> mytreeproducer_${NN}_cfg.py
+cmsRun mytreeproducer_${NN}_cfg.py >> log${NN}
 rm mytreeproducer_${NN}_cfg.py
 
 echo 'echo 'N="80"' > mytreeproducer_${NN}_cfg.py' >> log${NN}
 echo 'N="80"' > mytreeproducer_${NN}_cfg.py
-more mytreeproducerTemplate_cfg.py >> mytreeproducer_${NN}_cfg.py
-#cmsRun mytreeproducer_${NN}_cfg.py >> log${NN}
+more mytreeCounterTemplate_cfg.py >> mytreeproducer_${NN}_cfg.py
+cmsRun mytreeproducer_${NN}_cfg.py >> log${NN}
 rm mytreeproducer_${NN}_cfg.py
 
 echo 'echo 'N="90"' > mytreeproducer_${NN}_cfg.py' >> log${NN}
 echo 'N="90"' > mytreeproducer_${NN}_cfg.py
-more mytreeproducerTemplate_cfg.py >> mytreeproducer_${NN}_cfg.py
-#cmsRun mytreeproducer_${NN}_cfg.py >> log${NN}
+more mytreeCounterTemplate_cfg.py >> mytreeproducer_${NN}_cfg.py
+cmsRun mytreeproducer_${NN}_cfg.py >> log${NN}
 rm mytreeproducer_${NN}_cfg.py
